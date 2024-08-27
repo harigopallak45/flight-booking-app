@@ -1,0 +1,19 @@
+.popular-destinations {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .destination-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .destination-card {
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: auto;
+  }

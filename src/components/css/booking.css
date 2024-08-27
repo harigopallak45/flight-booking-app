@@ -1,0 +1,37 @@
+.flight-booking {
+    margin: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .popular-destinations,
+  .flight-deals {
+    margin-top: 30px;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust column count as needed */
+    gap: 20px;
+  }
+  
+  .destination-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .deal-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .deal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
