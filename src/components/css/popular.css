@@ -1,19 +1,62 @@
+/* Container for the entire section */
 .popular-destinations {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .destination-cards {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .destination-card {
-    width: 200px; /* Adjust width as needed */
-    text-align: center;
-  }
-  
-  .destination-card img {
-    width: 100%;
-    height: auto;
-  }
+  margin: 20px;
+  text-align: center;
+}
+
+/* Flexbox container for all destination cards */
+.destinations {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each individual destination card */
+.destination {
+  width: 100%; /* Take full width of parent */
+  max-width: 200px; /* Constrain the max width to 200px */
+  height: auto; /* Height will be automatically determined by the content */
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Add a hover effect to scale the card slightly */
+.destination:hover {
+  transform: scale(1.05);
+}
+
+/* Image within each destination card */
+.destination-image {
+  width: 100%; /* Make the image responsive to the container */
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 120px; /* Maximum height to maintain the design */
+  object-fit: cover; /* Cover the container without distorting the image */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Destination name styling */
+.destination h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Destination description styling */
+.destination p {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

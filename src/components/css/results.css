@@ -1,42 +1,63 @@
+/* Container for flight results */
 .flight-results {
-  padding: 40px 0;
+  padding: 20px;
+  background-color: #f7f7f7;
 }
 
+/* Title styling */
 .flight-results h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
+/* Flexbox container for flight cards */
 .flights {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px; /* Space between flight cards */
+  justify-content: center; /* Center align cards */
 }
 
+/* Individual flight card */
 .flight {
-  width: 30%;
-  margin: 20px;
-  text-align: center;
-  border: 1px solid #ddd;
+  flex: 1 1 calc(33.333% - 40px); /* Responsive three-column layout */
+  max-width: 300px; /* Maximum width of each card */
+  background-color: #fff;
   padding: 20px;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  text-align: center;
 }
 
-.flight h3 {
-  font-size: 18px;
+/* Flight card button */
+.flight button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
   margin-top: 10px;
 }
 
-.flight p {
-  font-size: 14px;
-  color: #666;
+/* Hover effect for the button */
+.flight button:hover {
+  background-color: #0056b3;
 }
 
-.flight button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: #fff;
-  cursor: pointer;
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .flight {
+    flex: 1 1 calc(50% - 20px); /* Two-column layout on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .flight {
+    flex: 1 1 100%; /* Single-column layout on very small screens */
+    max-width: 100%; /* Ensure full width on small screens */
+  }
 }

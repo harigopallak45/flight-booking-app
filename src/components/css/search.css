@@ -1,23 +1,66 @@
+/* src/css/search.css */
+
+/* Container for the search form */
+.search-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1000px; /* Limit max-width */
+}
+
+/* Styling for the form */
 .search-form {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 40px auto;
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Wrap inputs on small screens */
+  gap: 10px; /* Space between form elements */
+  width: 100%; /* Full width */
+}
+
+/* Styling for each input field */
+.search-form input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  flex: 1; /* Flexible width */
+  min-width: 150px; /* Minimum width */
+  max-width: 200px; /* Maximum width */
+}
+
+/* Styling for the submit button */
+.search-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green background */
+  color: #fff;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
   .search-form input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 20%;
-    margin-right: 20px;
+    flex: 1 1 45%; /* Two columns on tablets */
   }
-  
+
   .search-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: #fff;
-    cursor: pointer;
+    flex: 1 1 100%; /* Full-width button on tablets */
+    margin-top: 10px;
   }
+}
+
+@media (max-width: 480px) {
+  .search-form input {
+    flex: 1 1 100%; /* Single column on mobile */
+    margin-bottom: 10px; /* Space between inputs */
+  }
+
+  .search-form button {
+    flex: 1 1 100%; /* Full-width button on mobile */
+  }
+}

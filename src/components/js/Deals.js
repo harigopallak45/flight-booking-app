@@ -1,21 +1,25 @@
 import React from 'react';
-import "../css/deals.css"
+import "../css/deals.css";
+import LogoImage from '../../assets/summer.png';
+import LastMinuteDealsImage from '../../assets/lastmin.png';
+import PackageDealsImage from '../../assets/flight.jpg';
+
 function GreatDeals() {
   const deals = [
     {
       title: 'Summer Sale',
       description: 'Up to 50% off on flights',
-      image: 'summer-sale.jpg',
+      image: LogoImage,
     },
     {
       title: 'Last Minute Deals',
       description: 'Book now and save big',
-      image: 'last-minute-deals.jpg',
+      image: LastMinuteDealsImage,
     },
     {
       title: 'Package Deals',
       description: 'Flights + Hotels from $500',
-      image: 'package-deals.jpg',
+      image: PackageDealsImage,
     },
   ];
 

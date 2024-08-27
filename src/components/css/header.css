@@ -1,44 +1,110 @@
 .header {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .background-container {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Adjust height as needed */
-    background-image: url("../../assets/Background.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .background-container img {
-    display: none; /* Hide the actual image, as it's used for background */
-  }
-  
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; /* Adjust color if needed */
-  }
-  
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Added to position the buttons correctly */
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  background-image: url("../../assets/Background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.background-container img {
+  display: none; /* Hide the actual image, as it's used for background */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust color if needed */
+  padding: 0 20px; /* Added padding for small screens */
+}
+
+.heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.2; /* Improved readability */
+}
+
+.subheading {
+  font-size: 24px;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Position buttons at the top right */
+.buttons {
+  position: absolute;
+  top: 20px; /* Adjust spacing from the top */
+  right: 20px; /* Adjust spacing from the right */
+  display: flex;
+  gap: 10px; /* Added gap between buttons */
+}
+
+.signup,
+.login {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #007bff; /* Bootstrap blue color for consistency */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.signup:hover,
+.login:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
   .heading {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 32px; /* Slightly smaller heading size for large tablets */
   }
-  
+
   .subheading {
-    font-size: 24px;
+    font-size: 20px; /* Slightly smaller subheading size for large tablets */
   }
-  
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 28px; /* Adjust heading size for medium screens */
+  }
+
+  .subheading {
+    font-size: 18px; /* Adjust subheading size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 24px; /* Adjust heading size for small screens */
+  }
+
+  .subheading {
+    font-size: 16px; /* Adjust subheading size for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 20px; /* Adjust heading size for very small screens */
+  }
+
+  .subheading {
+    font-size: 14px; /* Adjust subheading size for very small screens */
+  }
+
   .buttons {
-    margin-top: 20px;
-    float: right;
-    margin-right: 5px;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap between buttons for very small screens */
   }
-  .content1 {
-    color: "balck";
-  }
+}
