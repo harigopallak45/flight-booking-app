@@ -2,6 +2,7 @@ import React from 'react';
 import backgroundImage from '../../assets/Background.jpg';
 import '../css/header.css';
 
+// Add Header
 function Header() {
   return (
     <header className="header">

@@ -1,7 +1,7 @@
-// src/components/SearchForm.js
 import React, { useState } from 'react';
 import '../css/search.css';
 
+// Add search bar Function
 function SearchForm() {
   const [search, setSearch] = useState({
     from: '',
@@ -12,9 +12,9 @@ function SearchForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
   };
 
+  // Data to be  be  fetch
   return (
     <div className="search-form-container">
       <form className="search-form" onSubmit={handleSubmit}>

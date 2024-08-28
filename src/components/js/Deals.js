@@ -1,5 +1,7 @@
 import React from 'react';
 import "../css/deals.css";
+
+// Add the path to your image
 import LogoImage from '../../assets/summer.png';
 import LastMinuteDealsImage from '../../assets/lastmin.png';
 import PackageDealsImage from '../../assets/flight.jpg';

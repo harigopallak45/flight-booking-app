@@ -1,20 +1,20 @@
 .header {
   width: 100%;
   overflow: hidden;
-  position: relative; /* Added to position the buttons correctly */
+  position: relative; 
 }
 
 .background-container {
   position: relative;
   width: 100%;
-  height: 300px; /* Adjust height as needed */
+  height: 300px; 
   background-image: url("../../assets/Background.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .background-container img {
-  display: none; /* Hide the actual image, as it's used for background */
+  display: none; 
 }
 
 .content {
@@ -23,28 +23,28 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* Adjust color if needed */
-  padding: 0 20px; /* Added padding for small screens */
+  color: white; 
+  padding: 0 20px; 
 }
 
 .heading {
   font-size: 36px;
   margin-bottom: 10px;
-  line-height: 1.2; /* Improved readability */
+  line-height: 1.2; 
 }
 
 .subheading {
   font-size: 24px;
-  margin-bottom: 20px; /* Added margin for spacing */
+  margin-bottom: 20px; 
 }
 
 /* Position buttons at the top right */
 .buttons {
   position: absolute;
-  top: 20px; /* Adjust spacing from the top */
-  right: 20px; /* Adjust spacing from the right */
+  top: 20px; 
+  right: 20px;
   display: flex;
-  gap: 10px; /* Added gap between buttons */
+  gap: 10px; 
 }
 
 .signup,
@@ -53,58 +53,58 @@
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #007bff; /* Bootstrap blue color for consistency */
+  background-color: #007bff; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease; 
 }
 
 .signup:hover,
 .login:hover {
-  background-color: #0056b3; /* Darker shade for hover effect */
+  background-color: #0056b3; 
 }
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .heading {
-    font-size: 32px; /* Slightly smaller heading size for large tablets */
+    font-size: 32px; 
   }
 
   .subheading {
-    font-size: 20px; /* Slightly smaller subheading size for large tablets */
+    font-size: 20px; 
   }
 }
 
 @media (max-width: 992px) {
   .heading {
-    font-size: 28px; /* Adjust heading size for medium screens */
+    font-size: 28px; 
   }
 
   .subheading {
-    font-size: 18px; /* Adjust subheading size for medium screens */
+    font-size: 18px; 
   }
 }
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 24px; /* Adjust heading size for small screens */
+    font-size: 24px; 
   }
 
   .subheading {
-    font-size: 16px; /* Adjust subheading size for small screens */
+    font-size: 16px; 
   }
 }
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 20px; /* Adjust heading size for very small screens */
+    font-size: 20px; 
   }
 
   .subheading {
-    font-size: 14px; /* Adjust subheading size for very small screens */
+    font-size: 14px; 
   }
 
   .buttons {
     flex-direction: column;
-    gap: 8px; /* Reduced gap between buttons for very small screens */
+    gap: 8px; 
   }
 }

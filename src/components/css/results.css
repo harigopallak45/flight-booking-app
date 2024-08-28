@@ -21,13 +21,13 @@
 
 /* Individual flight card */
 .flight {
-  flex: 1 1 calc(33.333% - 40px); /* Responsive three-column layout */
-  max-width: 300px; /* Maximum width of each card */
+  flex: 1 1 calc(33.333% - 40px); 
+  max-width: 300px; 
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -51,13 +51,13 @@
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .flight {
-    flex: 1 1 calc(50% - 20px); /* Two-column layout on smaller screens */
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .flight {
-    flex: 1 1 100%; /* Single-column layout on very small screens */
-    max-width: 100%; /* Ensure full width on small screens */
+    flex: 1 1 100%; 
+    max-width: 100%; 
   }
 }

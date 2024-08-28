@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/results.css";
 
+// Add flight data
 function FlightResults() {
   const flights = [
     {
@@ -62,6 +63,7 @@ function FlightResults() {
   return (
     <section className="flight-results">
       <h2>Flight Results</h2>
+      {/* Flight data set */}
       <div className="flights">
         {flights.length > 0 ? (
           flights.map((flight, index) => (

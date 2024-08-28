@@ -1,29 +1,29 @@
 .popular-destinations {
-  padding: 40px 20px; /* Added horizontal padding for small screens */
+  padding: 40px 20px; 
 }
 
 .popular-destinations h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px; /* Increased font size for better visibility */
+  font-size: 24px;
 }
 
 .destinations {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for responsiveness */
-  justify-content: center; /* Center the destination cards */
-  gap: 20px; /* Add spacing between cards */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .destination {
-  flex: 1 1 calc(33.333% - 40px); /* Responsive width with margin adjustment */
-  max-width: 300px; /* Set a maximum width for the cards */
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 300px; 
   text-align: center;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 10px; /* Adjust margin for spacing */
+  margin: 10px; 
 }
 
 .destination img {
@@ -46,14 +46,14 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .destination {
-    flex: 1 1 calc(50% - 40px); /* Two-column layout on medium screens */
+    flex: 1 1 calc(50% - 40px); 
   }
 }
 
 @media (max-width: 480px) {
   .destination {
-    flex: 1 1 100%; /* Single-column layout on small screens */
-    max-width: 100%; /* Full width on small screens */
+    flex: 1 1 100%; 
+    max-width: 100%; 
   }
 }
  

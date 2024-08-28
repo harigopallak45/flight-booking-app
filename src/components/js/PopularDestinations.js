@@ -1,7 +1,8 @@
 import React from 'react';
 import "..//css/destination.css"
 
-import ParisImage from '../../assets/Paris.jpg'; // Adjust the path to your image
+// Add the path to your image
+import ParisImage from '../../assets/Paris.jpg';
 import RomeImage from '../../assets/Rome.jpg';
 import BangkokImage from '../../assets/Bangkok.jpg';
 import tokyoimg  from '../../assets/tokyo.jpg';
@@ -10,6 +11,7 @@ import chennai from '../../assets/chennai.jpg'
 import hyderabad from '../../assets/Hyderabad.jpg'
 import salem from '../../assets/Salem.jpg'
 
+// Add data for the destination
 function PopularDestinations() {
   const destinations = [
     { name: 'Paris', image: ParisImage, description: 'The City of Light' },

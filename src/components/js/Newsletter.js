@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Add Feild for  Email
 function Newsletter() {
   return (
     <section className="newsletter">

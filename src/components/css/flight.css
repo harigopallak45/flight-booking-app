@@ -1,10 +1,7 @@
-.flight-booking {
-    /* ... */
-  }
-  
+ 
   .search-form {
     display: flex;
-    gap: 10px; /* Adjust gap as needed */
+    gap: 10px; 
     margin-bottom: 20px;
   }
   
@@ -12,13 +9,13 @@
   .search-form input[type="date"] {
     padding: 8px;
     border: 1px solid #ccc;
-    width: calc(50% - 5px); /* Adjust width as needed */
+    width: calc(50% - 5px); 
   }
   
   .search-form select {
     padding: 8px;
     border: 1px solid #ccc;
-    width: calc(50% - 5px); /* Adjust width as needed */
+    width: calc(50% - 5px); 
   }
   
   .search-form button {

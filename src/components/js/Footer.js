@@ -1,12 +1,13 @@
 import React from 'react';
-import '../css/footer.css'; // Import the CSS file
+import '../css/footer.css';
+import logo1 from '../../assets/Logo1.jpg';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <img src="path/to/your/logo.png" alt="SkyChex Logo" />
+          <img src={logo1} alt="Flight Logo" />
           <p>Easy to Fly</p>
         </div>
         <div className="footer-links">
